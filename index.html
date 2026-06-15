@@ -217,7 +217,59 @@
 
     <!-- Main CTA Button -->
     <a href="about.html" class="main-btn">View Full Profile & Skills <i class="fa-solid fa-arrow-right"></i></a>
-
   </main>  
+<!-- Sidebar Menu -->
+<nav class="sidebar-nav">
+    <input type="checkbox" id="menu-toggle" class="menu-hidden">
+    <label for="menu-toggle" class="menu-icon">☰</label>
+
+    <div class="sidebar-links">
+        <a href="index.html">Home</a>
+        <a href="https://waqastechfinds.blogspot.com" target="_blank">Blog</a>
+        <a href="https://waqastechfinds.blogspot.com/p/contact-us.html" target="_blank">Contact Us</a>
+        <a href="about.html">About Me</a>
+    </div>
+</nav>
+
+<style>
+/* Menu Icon (Ab Black Rang Mein Hai) */
+.menu-icon {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1000;
+    color: #000000; /* Isse lines black ho jayengi */
+}
+
+/* Sidebar Box */
+.sidebar-links {
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100%;
+    background: #1a1a2e;
+    padding-top: 60px;
+    transition: 0.3s;
+    z-index: 999;
+}
+
+.sidebar-links a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+/* Jadu (Click par open hona) */
+.menu-hidden { display: none; }
+#menu-toggle:checked ~ .sidebar-links { right: 0; }
+</style>
+
+ 
 </body>  
 </html>
