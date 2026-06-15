@@ -230,46 +230,57 @@
         <a href="about.html">About Me</a>
     </div>
 </nav>
-
 <style>
-/* Menu Icon (Ab Black Rang Mein Hai) */
+/* Menu Icon */
 .menu-icon {
     position: fixed;
     top: 15px;
     right: 20px;
     font-size: 30px;
     cursor: pointer;
-    z-index: 1000;
-    color: #000000; /* Isse lines black ho jayengi */
+    z-index: 998; /* Isse icon dabbe ke peeche chupa rahega jab menu khulega */
+    color: #000000;
+    font-weight: bold;
 }
 
 /* Sidebar Box */
 .sidebar-links {
     position: fixed;
     top: 0;
-    right: -200px;
-    width: 200px;
+    right: -240px;
+    width: 240px;
     height: 100%;
-    background: #1a1a2e;
-    padding-top: 60px;
-    transition: 0.3s;
+    background: #111424; /* Aapke background se match dark navy color */
+    padding-top: 80px;
+    transition: 0.3s cubic-bezier(0.77,0.2,0.05,1.0);
     z-index: 999;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.3);
 }
 
+/* Sidebar Links Design */
 .sidebar-links a {
     display: block;
-    padding: 15px;
-    color: white;
+    padding: 18px 25px;
+    color: #ffffff;
     text-decoration: none;
-    text-align: center;
-    border-bottom: 1px solid #333;
+    text-align: left; /* Center se behtar left alignment lagti hai */
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: 0.2s;
 }
 
-/* Jadu (Click par open hona) */
+/* Hover Effect */
+.sidebar-links a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    padding-left: 30px; /* Choti si animation click karne par */
+    color: #007bff;
+}
+
+/* Hidden Checkbox */
 .menu-hidden { display: none; }
 #menu-toggle:checked ~ .sidebar-links { right: 0; }
 </style>
 
- 
 </body>  
 </html>
