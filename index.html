@@ -230,6 +230,22 @@
         <a href="about.html">About Me</a>
     </div>
 </nav>
+<!-- Sidebar Menu -->
+<nav class="sidebar-nav">
+    <input type="checkbox" id="menu-toggle" class="menu-hidden">
+    <label for="menu-toggle" class="menu-icon">☰</label>
+
+    <div class="sidebar-links">
+        <!-- Close Button (X) -->
+        <label for="menu-toggle" class="close-btn">&times;</label>
+        
+        <a href="index.html">Home</a>
+        <a href="https://waqastechfinds.blogspot.com" target="_blank">Blog</a>
+        <a href="https://waqastechfinds.blogspot.com/p/contact-us.html" target="_blank">Contact Us</a>
+        <a href="about.html">About Me</a>
+    </div>
+</nav>
+
 <style>
 /* Menu Icon */
 .menu-icon {
@@ -238,48 +254,53 @@
     right: 20px;
     font-size: 30px;
     cursor: pointer;
-    z-index: 998; /* Isse icon dabbe ke peeche chupa rahega jab menu khulega */
-    color: #000000;
-    font-weight: bold;
+    z-index: 1000;
+    color: #000;
 }
 
-/* Sidebar Box */
+/* Sidebar Box (Ab half width ke sath hai) */
 .sidebar-links {
     position: fixed;
     top: 0;
-    right: -240px;
-    width: 240px;
+    right: -160px; /* Width ke mutabiq chupa hua */
+    width: 160px;  /* Isko 250px se kam karke 160px kar diya hai */
     height: 100%;
-    background: #111424; /* Aapke background se match dark navy color */
-    padding-top: 80px;
-    transition: 0.3s cubic-bezier(0.77,0.2,0.05,1.0);
-    z-index: 999;
-    box-shadow: -5px 0 15px rgba(0,0,0,0.3);
+    background: #111424;
+    padding-top: 15px;
+    transition: 0.3s ease;
+    z-index: 1001;
+    box-shadow: -3px 0 10px rgba(0,0,0,0.3);
 }
 
-/* Sidebar Links Design */
+/* Close Button (X) */
+.close-btn {
+    font-size: 32px;
+    color: white;
+    padding: 5px 15px;
+    cursor: pointer;
+    display: block;
+    text-align: right;
+}
+
+/* Sidebar Links (Mobile ke liye perfectly sized) */
 .sidebar-links a {
     display: block;
-    padding: 18px 25px;
-    color: #ffffff;
+    padding: 15px;
+    color: white;
     text-decoration: none;
-    text-align: left; /* Center se behtar left alignment lagti hai */
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 15px; /* Text thoda chota kiya taake tight space mein fit aaye */
+    text-align: left;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    transition: 0.2s;
 }
 
-/* Hover Effect */
 .sidebar-links a:hover {
     background: rgba(255, 255, 255, 0.1);
-    padding-left: 30px; /* Choti si animation click karne par */
     color: #007bff;
 }
 
-/* Hidden Checkbox */
 .menu-hidden { display: none; }
 #menu-toggle:checked ~ .sidebar-links { right: 0; }
 </style>
+
 </body>  
 </html>
