@@ -8,20 +8,24 @@
   <!-- SEO Meta Tags -->
   <title>M.Waqas Portfolio</title>    
   <meta name="description" content="Professional portfolio of M.Waqas - Affiliate Marketer, Blogger, and SEO Content Writer specializing in budget tech finds and professional content creation.">
-  <meta name="keywords" content="M.Waqas, M.Waqas Portfolio, Affiliate Marketer, Blogger, SEO content writer, Pakistan Blogger, Bahawalpur, Budget Tech Finds, budget tech gadgets, frontend developer">
+  <meta name="keywords" content="M.Waqas, M.Waqas Portfolio, Affiliate Marketer, Blogger, SEO content writer, Budget Tech Finds, budget tech gadgets, international affiliate marketer, frontend developer">
   <meta name="author" content="M.Waqas">
   <meta name="robots" content="index, follow">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png">
   
   <!-- Open Graph Meta Tags for Social Media SEO -->
   <meta property="og:title" content="M.Waqas Portfolio">
   <meta property="og:description" content="Affiliate Marketer & SEO Content Writer. Explore my latest workspace projects, blogs, and marketing channels.">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="logo.png">
 
   <!-- Font Awesome for Clean Professional Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
   <style>  
-    /* Smooth Scrolling Rule */
     html {
       scroll-behavior: smooth;
     }
@@ -29,18 +33,16 @@
     body {  
       margin: 0;  
       font-family: 'Segoe UI', Arial, sans-serif;  
-      /* New Premium Dark Tech Background */
       background: radial-gradient(circle at top right, #141622 0%, #0d0e15 100%);  
       color: white;
       text-align: center;  
       display: flex;
       flex-direction: column;
       min-height: 100vh;
-      padding: 10px 0 0 0; /* Adjusted for footer alignment */
+      padding: 10px 0 0 0;
       box-sizing: border-box;
     }  
 
-    /* Top target wrapper for home scrolling */
     #top {
       width: 100%;
       height: 0;
@@ -70,13 +72,23 @@
       font-size: 12px;  
       font-weight: bold;
     }  
+
+    .section-label {
+      text-align: left;
+      color: #999;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin: 26px 0 8px 4px;
+    }
   
     .link-box {
       background: #f8f9fa;
       border: 1px solid #e9ecef;
       border-radius: 14px;
       padding: 18px;
-      margin: 16px 0;
+      margin: 14px 0;
       text-align: left;
       transition: all 0.3s ease;
     }
@@ -125,38 +137,6 @@
       transform: scale(0.97);
     }
 
-    .tiktok-section {
-      background: #010101;
-      color: white;
-      border-radius: 14px;
-      padding: 18px;
-      margin-top: 20px;
-      transition: transform 0.3s ease;
-      text-decoration: none;
-      display: block;
-    }
-    
-    .tiktok-section:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 6px 20px rgba(255, 0, 80, 0.2);
-    }
-
-    .tiktok-tag {
-      background: #ff0050;
-    }
-
-    .stats {  
-      display: flex;
-      justify-content: space-around;
-      margin-top: 12px;  
-      font-size: 14px;  
-      font-weight: bold;
-      background: rgba(255,255,255,0.1);
-      padding: 8px;
-      border-radius: 8px;
-      color: white;
-    }  
-  
     .main-btn {  
       display: flex;
       justify-content: center;
@@ -191,7 +171,7 @@
         font-size: 30px;
         cursor: pointer;
         z-index: 1000;
-        color: #ffffff; /* Changed to white to fit premium dark theme */
+        color: #ffffff;
         font-weight: bold;
     }
 
@@ -240,8 +220,8 @@
         width: 100%;
         text-align: center;
         padding: 35px 20px;
-        margin-top: auto; /* Pushes footer to bottom */
-        background: #090a0f; /* Deep crisp black layout */
+        margin-top: auto;
+        background: #090a0f;
         border-top: 1px solid rgba(255, 255, 255, 0.05);
         box-sizing: border-box;
     }
@@ -276,7 +256,6 @@
 </head>  
 
 <body>    
-  <!-- Top Marker for scrolling -->
   <div id="top"></div>
 
   <!-- Sidebar Menu Layer -->
@@ -302,6 +281,8 @@
 
     <hr style="border: 0; border-top: 1px solid #eee; margin: 15px 0;">
 
+    <p class="section-label">Connect</p>
+
     <!-- Pinterest Section -->
     <section class="link-box">
       <h4><i class="fa-brands fa-pinterest" style="color: #bd081c;"></i> Pinterest Profile: BudgetTechFinds</h4>
@@ -313,12 +294,32 @@
 
     <!-- Blog Section -->
     <section class="link-box">
-      <h4><i class="fa-solid fa-blog" style="color: #e5a93b;"></i> Blog: Budget Phone Accessories</h4>
-      <p>SEO optimized reviews focusing on affordable tech accessories in Pakistan.</p>
+      <h4><i class="fa-solid fa-blog" style="color: #e5a93b;"></i> Budget Tech Accessories</h4>
+      <p>SEO optimized reviews on affordable tech accessories for a global audience. 20+ articles published and counting.</p>
       <a href="https://waqastechfinds.blogspot.com" target="_blank" class="btn-link">
         <i class="fa-solid fa-globe"></i> Visit Blog
       </a>
     </section>
+
+    <!-- LinkedIn Section -->
+    <section class="link-box">
+      <h4><i class="fa-brands fa-linkedin-in" style="color: #0077b5;"></i> LinkedIn: Muhammad Waqas</h4>
+      <p>500+ professional connections. ICS Student | Affiliate Marketer & Blogger | SEO Content Writer.</p>
+      <a href="https://www.linkedin.com/in/muhammad-waqas-5126103a4" target="_blank" class="btn-link">
+        <i class="fa-brands fa-linkedin"></i> View Profile
+      </a>
+    </section>
+
+    <!-- Beehiiv Newsletter Section -->
+    <section class="link-box">
+      <h4><i class="fa-solid fa-envelope-open-text" style="color: #f5a623;"></i> Newsletter: Waqas Tech Finds</h4>
+      <p>Weekly budget tech picks and deals, delivered straight to your inbox.</p>
+      <a href="https://waqastechfinds.beehiiv.com/" target="_blank" class="btn-link">
+        <i class="fa-solid fa-paper-plane"></i> Subscribe
+      </a>
+    </section>
+
+    <p class="section-label">Projects</p>
 
     <!-- Featured Project Section -->
     <section class="link-box" style="border-left: 4px solid #007bff;">
@@ -326,15 +327,14 @@
       <p>A beautiful grid-based digital identity card project. Built and tested completely on a mobile screen using clean HTML and CSS layouts.</p>
     </section>
 
-    <!-- TikTok Section -->
-    <a href="https://tiktok.com/@rana.waqas3240" target="_blank" class="tiktok-section">  
-      <span class="tag tiktok-tag"><i class="fa-brands fa-tiktok"></i> TikTok Creator</span>
-      <p style="margin: 12px 0 5px 0; font-weight: bold; font-size: 16px; color: white;">@rana.waqas3240</p>  
-      <div class="stats">  
-        <span><i class="fa-solid fa-heart" style="color: #ff0050;"></i> Likes: 15K+</span>  
-        <span><i class="fa-solid fa-users"></i> Followers: 700+</span>  
-      </div>  
-    </a>  
+    <!-- Font Craft Project Section -->
+    <section class="link-box" style="border-left: 4px solid #007bff;">
+      <h4><i class="fa-solid fa-font" style="color: #007bff;"></i> Font Craft: Aesthetic Font & Bio Tool</h4>
+      <p>A free web utility to convert text into aesthetic fonts and generate stylish bios. Built and hosted on GitHub, Google-indexed, 100/100 PageSpeed performance and SEO scores.</p>
+      <a href="https://ilyasrana535-a11y.github.io/Font-Craft/" target="_blank" class="btn-link">
+        <i class="fa-solid fa-arrow-up-right-from-square"></i> Try Font Craft
+      </a>
+    </section>
 
     <!-- Main CTA Button -->
     <a href="about.html" class="main-btn">View Full Profile & Skills <i class="fa-solid fa-arrow-right"></i></a>
